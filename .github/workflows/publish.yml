@@ -17,13 +17,13 @@ jobs:
       matrix:
         include:
           - os: ubuntu-latest
-            artifact_name: sysovr
+            artifact_name: system_overview
             asset_name: sysovr-linux-amd64
           - os: windows-latest
-            artifact_name: sysovr.exe
+            artifact_name: system_overview.exe
             asset_name: sysovr-windows-amd64
           - os: macos-latest
-            artifact_name: sysovr
+            artifact_name: system_overview
             asset_name: sysovr-macos-amd64
 
     steps:
