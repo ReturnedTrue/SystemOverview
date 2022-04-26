@@ -3,6 +3,7 @@ mod lib;
 use sysinfo::{System, SystemExt};
 
 use std::time::Duration;
+use std::io::{stdin, Read};
 use std::thread;
 
 use lib::*;
@@ -11,6 +12,13 @@ const STRING_SEGREGATOR: &str = "====";
 
 fn println_with_segregator(message: &str) {
 	println!("{} {} {}", STRING_SEGREGATOR, message, STRING_SEGREGATOR);
+}
+
+fn yield_for_key_press() {
+	let mut standard_input = stdin();
+	let mut puppet_buffer = [0];
+
+	standard_input.read(&mut puppet_buffer).unwrap();
 }
 
 fn main() {
@@ -56,4 +64,5 @@ fn main() {
 	}
 
 	println_with_segregator("End Of Overview");
+	yield_for_key_press();
 }

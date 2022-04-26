@@ -18,13 +18,13 @@ jobs:
         include:
           - os: ubuntu-latest
             artifact_name: system_overview
-            asset_name: sysovr-linux-amd64
+            asset_name: sysovr-linux
           - os: windows-latest
             artifact_name: system_overview.exe
-            asset_name: sysovr-windows-amd64
+            asset_name: sysovr-windows.exe
           - os: macos-latest
             artifact_name: system_overview
-            asset_name: sysovr-macos-amd64
+            asset_name: sysovr-macos.app
 
     steps:
     - uses: actions/checkout@v2
