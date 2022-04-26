@@ -173,7 +173,7 @@ dependencies = [
 
 [[package]]
 name = "system_overview"
-version = "1.0.1"
+version = "1.0.1-fix.1"
 dependencies = [
  "sysinfo",
 ]
